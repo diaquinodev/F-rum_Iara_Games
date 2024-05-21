@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores principais */
+:root {
+    --primary-color: #444444; /* Azul primário */
+    --secondary-color: #CFE2F3; /* Roxo */
+    --background-color: #F0F8FF; /* Azul claro */
+    --text-color: #F3F6F4; /* Cinza escuro */
+    --header-background: #343A40; /* Cor da navbar e rodapé */
+    --card-background: #5B5B5B; /* Branco */
+}
+
+/* Estilos personalizados */
+body {
+    background-color: var(--background-color);
+    background-image: url('../img/Design\ sem\ nome.png');
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: var(--header-background);
+    margin-bottom: 20px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+/* .card-header {
+    background-color: var(--primary-color);
+    color: #999999;
+    font-weight: bold; */
+
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte para maior clareza */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona um shadow para profundidade */
+    padding: 10px;
+    border-radius: 5px 5px 0 0; /* Adiciona bordas arredondadas no topo */
+}
+
+.card {
+    background-color: var(--card-background);
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    color: var(--text-color);
+}
+
+.topic h5 {
+    color: var(--secondary-color);
+}
+
+.topic p {
+    color: var(--text-color);
+}
+
+.footer {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card-header, .card-body {
+        text-align: center;
+    }
+}
+
+
+/* Estilo para o cabeçalho do fórum */
+.forum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6vw;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.forum-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.new-topic-button {
+    background-color: var(--header-background);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Ajuste no título dos cards */
+.card-header {
+    
+    color: #FFFFFF; /* Um pouco mais claro */
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao card header */
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
